@@ -1,0 +1,38 @@
+﻿<!-- nav -->
+
+<!-- <ul>
+    <li><a href="#"><img src="assets/images/looogo.png.png" class="logo"></a></li>
+    <li><a href="#"><img src="assets/images/person.svg" class="person"><span class="imgtext">Students</span></a></li>
+    <li><a  class="active" href="#"><img src="assets/images/journals.svg" class="person"><span class="imgtext">Lesson Plan</span></a></li>
+    <li><a href="#"><img src="assets/images/gear.svg" class="person"><span class="imgtext">Settings</span></a></li>
+  </ul> -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" style=" position: fixed; width: 100%;"  >
+    
+    
+    <div class="navbar-nav" style="float: right;"  >
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="nav-item nav-link" *ngIf="user" routerLink="/users" routerLinkActive="active">Users</a>
+        <a class="nav-item nav-link" *ngIf="user" routerLink="/gallery" routerLinkActive="active">Gallery</a>
+        <a class="nav-item nav-link"  routerLink="/about" routerLinkActive="active">About</a>
+        <a class="nav-item nav-link"  *ngIf="user" (click)="logout()">Logout</a>
+        <a class="nav-item nav-link"  *ngIf="!user" routerLink="/account/login" routerLinkActive="active">Login</a>
+        
+    </div>
+    <div style="float: right;">
+        <a  *ngIf="user" class="welcome"> Welcome {{user.firstName}}</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container" [ngClass]="{ 'bg-light': user }">
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+    <p>
+        &copy; 2021 Renewcars. ALL RIGHTS RESERVED
+    </p>
+   
+</div>

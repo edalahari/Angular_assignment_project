@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+	text-align: center;
+    overflow: auto;
+   
+  }
+  
+  li a {
+    display: flex;
+    color: #000;
+    height: 60px;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+  .heading {
+      margin-top: 20px;
+  }
+  .container{
+      width: 800px;
+      margin-top: 5%;
+  }
+  .container .searchbar{
+	  margin-left: 180px;
+    width: 800px;
+    height: 30px;
+    border-style: none;
+  }
+  .container h4{
+    margin-left: 550px;
+    margin-top: 10px;
+  }
+  .heading .sidecontent {
+      padding-top: 50px;
+      margin-left: 50px;
+  }
+  li a.active {
+    background-color: skyblue;
+    
+   
+  }
+  .imgtext {
+      display: block;
+      font-size: 12px;
+	  
+  }
+  .person {
+   height: 20px;
+   width: 20px;
+   margin-top: 20px;
+   margin-left: 5px;
+   
+  }
+  li a.active::before {
+      border-radius: 5px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .header {
+    margin-left:100px;
+    padding:1px 16px;
+    height:75px;
+  }
+  .main-body {
+    margin-left:100px;
+    padding:1px 16px;
+    
+    background-color: rgb(224, 224, 224);
+    height: 1000px;
+  }
+  .img-upload {
+    height: 150px;
+    background-color: ivory;
+    width: 150px;
+	margin-left: 180px;
+	text-align: center;
+	vertical-align:middle; 
+    /* display:table-cell; */
+    cursor: pointer;
+  }
+  .img-upload label {
+   margin-top: 65px;
+   display: inline-block;
+  }
+  .welcome{
+      text-align: end;
+      text-align-last: right;
+      color: aliceblue;
+      margin-left: 900px;
+  }
+  

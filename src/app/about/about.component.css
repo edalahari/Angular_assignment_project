@@ -1,0 +1,21 @@
+.main-content{
+    margin-top: 90px;
+    height: 100%;
+    width:55%
+}
+h1 {
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+p {
+    text-align: justify;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+.img{
+    margin-top: -400px;
+    margin-left: 56%;
+    display: flex;
+}
